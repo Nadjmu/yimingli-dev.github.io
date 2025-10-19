@@ -3,39 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Your Name | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#papers">Thesis & Papers</a>
-      <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">GitHub</a>
-    </nav>
+    <div class="container header-container">
+      <div>
+        <h1>Your Name</h1>
+        <p>Aspiring Machine Learning Engineer | Research-Oriented Developer</p>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#papers">Thesis & Papers</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I’m a developer and researcher passionate about applying machine learning and
+        computational methods to solve real-world problems. My background bridges software
+        engineering and scientific research, and I’m continuously expanding my skills in 
+        data science, deep learning, and AI-driven systems.
+      </p>
+    </section>
+
     <section id="projects">
       <h2>Projects</h2>
-      <ul>
-        <li><a href="https://github.com/YOUR_GITHUB_USERNAME/PROJECT_1" target="_blank">Project 1</a> – Short description here</li>
-        <li><a href="https://github.com/YOUR_GITHUB_USERNAME/PROJECT_2" target="_blank">Project 2</a> – Short description here</li>
-      </ul>
+      <div class="card-grid">
+        <div class="card">
+          <h3><a href="https://github.com/YOUR_GITHUB_USERNAME/PROJECT_1" target="_blank">Neural ODE Solver</a></h3>
+          <p>Implemented neural networks to learn and predict coupled ODE dynamics from experimental data.</p>
+        </div>
+        <div class="card">
+          <h3><a href="https://github.com/YOUR_GITHUB_USERNAME/PROJECT_2" target="_blank">Sensor Communication Interface</a></h3>
+          <p>Developed STM32-based industrial interface supporting RS485 and HART communication protocols.</p>
+        </div>
+        <div class="card">
+          <h3><a href="https://github.com/YOUR_GITHUB_USERNAME/PROJECT_3" target="_blank">Portfolio Website</a></h3>
+          <p>Designed this portfolio using HTML, CSS, and GitHub Pages to showcase academic and engineering work.</p>
+        </div>
+      </div>
     </section>
 
     <section id="papers">
       <h2>Thesis & Seminar Papers</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3><a href="papers/thesis.pdf" target="_blank">Bachelor Thesis: Machine Learning for Dynamical Systems</a></h3>
+          <p>Exploration of data-driven modeling techniques for nonlinear physical systems using neural architectures.</p>
+        </div>
+        <div class="card">
+          <h3>Seminar Paper: Advances in Quantum Field Theory Simulations</h3>
+          <p>Surveyed computational methods bridging QFT and deep learning frameworks for numerical simulation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>You can reach me via:</p>
       <ul>
-        <li><a href="papers/thesis.html">Bachelor Thesis</a> – Title or topic</li>
-        <li><a href="papers/seminar1.html">Seminar Paper on ...</a></li>
+        <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+        <li>GitHub: <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">github.com/YOUR_GITHUB_USERNAME</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">linkedin.com/in/YOUR_LINKEDIN</a></li>
       </ul>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Your Name</p>
+    <p>© 2025 Your Name — Built with HTML, CSS, and GitHub Pages</p>
   </footer>
 </body>
 </html>
